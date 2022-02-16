@@ -1,5 +1,5 @@
 import React from 'react';
-import './calculator.css';
+import './calculator.scss';
 
 class Value extends React.Component {
   constructor(props) {
@@ -42,7 +42,7 @@ class Value extends React.Component {
             <input type='button' value='*'></input>
             <input type='button' value='-'></input>
             <input type='button' value='+'></input>
-            <input type='button' value='='></input>
+            <input type='button' value='=' className='equal'></input>
           </div>
         </div>
       </div>
