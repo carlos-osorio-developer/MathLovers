@@ -1,6 +1,6 @@
 import React from 'react';
 import './calculator.scss';
-import { calculate } from './logic/calculate';
+import Key from './key';
 
 const Calculator = class Value extends React.Component {
   constructor(props) {
@@ -16,7 +16,7 @@ const Calculator = class Value extends React.Component {
         <div className="panel">
           <div className="buttons">
             <div className="row">
-              <input type="button" value="AC" />
+              <Key value="AC" />
               <input type="button" value="+/-" />
               <input type="button" value="%" />
             </div>
