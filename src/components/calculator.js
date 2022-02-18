@@ -1,5 +1,6 @@
 import React from 'react';
 import './calculator.scss';
+import { calculate } from './logic/calculate';
 
 const Calculator = class Value extends React.Component {
   constructor(props) {
