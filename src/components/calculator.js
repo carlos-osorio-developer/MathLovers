@@ -17,35 +17,35 @@ const Calculator = class Value extends React.Component {
           <div className="buttons">
             <div className="row">
               <Key value="AC" />
-              <input type="button" value="+/-" />
-              <input type="button" value="%" />
+              <Key value="+/-" />
+              <Key value="%" />
             </div>
             <div className="row">
-              <input type="button" value="7" />
-              <input type="button" value="8" />
-              <input type="button" value="9" />
+              <Key value="7" />
+              <Key value="8" />
+              <Key value="9" />
             </div>
             <div className="row">
-              <input type="button" value="4" />
-              <input type="button" value="5" />
-              <input type="button" value="6" />
+              <Key value="4" />
+              <Key value="5" />
+              <Key value="6" />
             </div>
             <div className="row">
-              <input type="button" value="1" />
-              <input type="button" value="2" />
-              <input type="button" value="3" />
+              <Key value="1" />
+              <Key value="2" />
+              <Key value="3" />
             </div>
             <div className="row">
-              <input type="button" value="0" className="double-size" />
-              <input type="button" value="." />
+              <Key value="0" className="double-size" />
+              <Key value="." />
             </div>
           </div>
           <div className="operations">
-            <input type="button" value="/" />
-            <input type="button" value="*" />
-            <input type="button" value="-" />
-            <input type="button" value="+" />
-            <input type="button" value="=" className="equal" />
+            <Key value="/" />
+            <Key value="*" />
+            <Key value="-" />
+            <Key value="+" />
+            <Key value="=" className="equal" />
           </div>
         </div>
       </div>
