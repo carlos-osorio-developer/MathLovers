@@ -1,51 +1,63 @@
 import React from 'react';
 import './calculator.scss';
 import Key from './key';
+import calculate from '../logic/calculate';
 
 const Calculator = class Value extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: 0 };
+    this.state = { total: '0', next: '', operation: null };
+    this.clickHandler = this.clickHandler.bind(this);
+  }
+
+  clickHandler(e) {
+    const obj = { ...this.state };
+    const melojuma = calculate(obj, e.target.value);
+    this.setState(melojuma);
+    console.log(obj);
+    console.log(melojuma);
   }
 
   render() {
-    const { value } = this.state;
+    const { total } = this.state;
     return (
       <div className="calculator">
-        <div className="display"><p>{value}</p></div>
+        <div className="display">
+          <p>{total}</p>
+        </div>
         <div className="panel">
           <div className="buttons">
             <div className="row">
-              <Key value="AC" />
-              <Key value="+/-" />
-              <Key value="%" />
+              <Key clickEvent={this.clickHandler} value="AC" />
+              <Key clickEvent={this.clickHandler} value="+/-" />
+              <Key clickEvent={this.clickHandler} value="%" />
             </div>
             <div className="row">
-              <Key value="7" />
-              <Key value="8" />
-              <Key value="9" />
+              <Key clickEvent={this.clickHandler} value="7" />
+              <Key clickEvent={this.clickHandler} value="8" />
+              <Key clickEvent={this.clickHandler} value="9" />
             </div>
             <div className="row">
-              <Key value="4" />
-              <Key value="5" />
-              <Key value="6" />
+              <Key clickEvent={this.clickHandler} value="4" />
+              <Key clickEvent={this.clickHandler} value="5" />
+              <Key clickEvent={this.clickHandler} value="6" />
             </div>
             <div className="row">
-              <Key value="1" />
-              <Key value="2" />
-              <Key value="3" />
+              <Key clickEvent={this.clickHandler} value="1" />
+              <Key clickEvent={this.clickHandler} value="2" />
+              <Key clickEvent={this.clickHandler} value="3" />
             </div>
             <div className="row">
-              <Key value="0" className="double-size" />
-              <Key value="." />
+              <Key clickEvent={this.clickHandler} value="0" className="double-size" />
+              <Key clickEvent={this.clickHandler} value="." />
             </div>
           </div>
           <div className="operations">
-            <Key value="/" />
-            <Key value="*" />
-            <Key value="-" />
-            <Key value="+" />
-            <Key value="=" className="equal" />
+            <Key clickEvent={this.clickHandler} value="/" />
+            <Key clickEvent={this.clickHandler} value="*" />
+            <Key clickEvent={this.clickHandler} value="-" />
+            <Key clickEvent={this.clickHandler} value="+" />
+            <Key clickEvent={this.clickHandler} value="=" className="equal" />
           </div>
         </div>
       </div>
