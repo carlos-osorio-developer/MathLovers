@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 
 // stateless component
 const Display = (props) => {
-  const { total, next, operation } = props;
-  const intNext = !next ? '' : next;
-  const intTotal = !total ? '0' : total;
-  const display = operation ? `${total} ${operation} ${intNext}` : next;
+  let { total, next } = props;
+  const { operation } = props;
+  next = next || '';
+  total = total || '0';
+  const display = operation ? `${total} ${operation} ${next}` : next;
   return (
     <div className="display">
-      <p>{(!display && total) ? intTotal : display}</p>
+      <p>{(!display && total) ? total : display}</p>
     </div>
   );
 };
