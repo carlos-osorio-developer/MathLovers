@@ -2,6 +2,7 @@ import React from 'react';
 import './calculator.scss';
 import Key from './key';
 import calculate from '../logic/calculate';
+import Display from './display';
 
 const Calculator = class Value extends React.Component {
   constructor(props) {
@@ -19,12 +20,10 @@ const Calculator = class Value extends React.Component {
   }
 
   render() {
-    const { total } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <div className="calculator">
-        <div className="display">
-          <p>{total}</p>
-        </div>
+        <Display total={total} next={next} operation={operation} />
         <div className="panel">
           <div className="buttons">
             <div className="row">
