@@ -9,8 +9,8 @@ const Calculator = ({ settings: initialSettings }) => {
   const [settings, setSettings] = useState(initialSettings);
 
   const clickHandler = (e) => {
-    const calc = calculate({ ...settings }, e.target.value);
-    setSettings({ ...calc });
+    const calc = calculate(settings, e.target.value);
+    setSettings(calc);
   };
 
   return (
