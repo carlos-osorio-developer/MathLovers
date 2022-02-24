@@ -1,10 +1,13 @@
-import Value from './components/calculator';
+import { Routes, Route } from 'react-router-dom';
+import Calculator from './components/calculator';
+import Home from './pages/home';
 
 function App() {
   return (
-    <div className="App">
-      <Value />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="calculator" element={<Calculator />} />
+    </Routes>
   );
 }
 
