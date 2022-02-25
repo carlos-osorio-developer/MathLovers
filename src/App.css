@@ -12,12 +12,12 @@ body {
   height: 100vh;
 }
 
-.active {        
+.active {
   /* bootstrap button */
   background-color: #4e99db;
   color: white !important;
   border-radius: 5px;
-  padding: 5px;  
+  padding: 5px;
   font-size: 18px;
   font-weight: bold;
   text-decoration: underline !important;
