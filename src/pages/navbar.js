@@ -18,6 +18,9 @@ const Navbar = () => (
           <li className={styles.navItem}>
             <NavLink to="/calculator">Calculator</NavLink>
           </li>
+          <li className={styles.navItem}>
+            <NavLink to="/quote">Quote</NavLink>
+          </li>
         </ul>
         <a href="https://github.com/carlos-osorio-developer/MathLovers">
           <BsGithub />
