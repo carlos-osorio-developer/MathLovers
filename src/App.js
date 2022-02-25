@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './pages/navbar';
 import Calculator from './components/calculator';
