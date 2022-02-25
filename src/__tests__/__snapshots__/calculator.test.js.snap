@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "height": "100vh",
+      "justifyContent": "space-between",
+      "margin": "0 auto",
+      "width": "80%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "fontSize": "2rem",
+          "fontWeight": "600",
+          "lineHeight": "1em",
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      Let's math! =&gt;
+    </p>
+  </div>
+  <div
+    className="calculator"
+  >
+    <div
+      className="display"
+    >
+      <p>
+        0
+      </p>
+    </div>
+    <div
+      className="panel"
+    >
+      <div
+        className="buttons"
+      >
+        <div
+          className="row"
+        >
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="AC"
+          />
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="+/-"
+          />
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="%"
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="7"
+          />
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="8"
+          />
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="9"
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="4"
+          />
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="5"
+          />
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="6"
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="1"
+          />
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="2"
+          />
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="3"
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            className="double-size"
+            onClick={[Function]}
+            type="button"
+            value="0"
+          />
+          <input
+            className=""
+            onClick={[Function]}
+            type="button"
+            value="."
+          />
+        </div>
+      </div>
+      <div
+        className="operations"
+      >
+        <input
+          className=""
+          onClick={[Function]}
+          type="button"
+          value="/"
+        />
+        <input
+          className=""
+          onClick={[Function]}
+          type="button"
+          value="*"
+        />
+        <input
+          className=""
+          onClick={[Function]}
+          type="button"
+          value="-"
+        />
+        <input
+          className=""
+          onClick={[Function]}
+          type="button"
+          value="+"
+        />
+        <input
+          className="equal"
+          onClick={[Function]}
+          type="button"
+          value="="
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
