@@ -6,5 +6,13 @@ it('renders correctly', () => {
   const tree = renderer.create(
     <Display total="473" next="11" operation="/" />
   ).toJSON();
-  expect(tree).toMatchSnapshot();
+  expect(tree).toMatchInlineSnapshot(`
+    <div
+      className="display"
+    >
+      <p>
+        473 / 11
+      </p>
+    </div>
+  `);
 });
