@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React from 'react';
 import { NavLink, Link, Outlet } from 'react-router-dom';
 import { BsGithub } from 'react-icons/bs';
