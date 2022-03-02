@@ -1,10 +1,20 @@
-import Value from './components/calculator';
+/* eslint-disable react/jsx-key */
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './pages/navbar';
+import Calculator from './components/calculator';
+import Home from './pages/home';
+import Quote from './pages/quotes';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Value />
-    </div>
+    <Routes>
+      <Route element={<Navbar />}>
+        <Route path="/" element={<Home />} />
+        <Route path="calculator" element={<Calculator />} />
+        <Route path="quote" element={<Quote />} />
+      </Route>
+    </Routes>
   );
 }
 
