@@ -2,6 +2,9 @@
 
 MathLovers is a React Single Page Application (SPA) with 3 sections: Home page, Calculator and Math Quotes section.
 
+## Live Demo
+
+[MathLovers](https://mathlovers.netlify.app/)
 
 ## Built With
 
